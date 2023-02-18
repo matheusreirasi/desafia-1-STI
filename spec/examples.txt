@@ -1,0 +1,6 @@
+example_id                    | status | run_time        |
+----------------------------- | ------ | --------------- |
+./spec/aluno_spec.rb[1:1:1:1] | passed | 0.00016 seconds |
+./spec/aluno_spec.rb[1:2:1:1] | passed | 0.00012 seconds |
+./spec/aluno_spec.rb[1:3:1:1] | passed | 0.00276 seconds |
+./spec/db_spec.rb[1:1:1:1]    | failed | 0.01539 seconds |
