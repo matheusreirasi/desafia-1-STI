@@ -1,18 +1,5 @@
-https://www.ruby-lang.org/pt/documentation/quickstart/
-https://www.rubyguides.com/2018/10/parse-csv-ruby/
-https://ruby-doc.org/stdlib-3.0.2/libdoc/csv/rdoc/CSV.html
-https://stackoverflow.com/questions/15769739/determining-type-of-an-object-in-ruby
-https://www.digitalocean.com/community/tutorials/how-to-convert-data-types-in-ruby
-https://ruby-doc.org/3.2.1/String.html
-https://www.thoughtco.com/requre-method-2908199
-http://ruby-for-beginners.rubymonstas.org/operators/comparison.html
-https://launchschool.com/books/ruby/read/loops_iterators
-https://www.devmedia.com.br/arrays-e-blocos-com-ruby-utilizando-o-irb/34268
-https://stackoverflow.com/questions/4870258/ruby-convert-string-into-array-of-characters
-
-
-
-1- Depois de colocar o rspec no arquivo Gemfile eu tenho que instalar usando bundle install e depois iniciar o rspec com "rspec --init"
+1- Depois de colocar o rspec no arquivo Gemfile eu tenho que instalar usando "bundle install" e depois iniciar o rspec com "rspec --init" para instalar o Gemfile.lock e outros arquivos.
 
 2- No começo do projeto havia tentado colocar o arquivo aluno.rb dentro da pasta classes que estava dentro da pasta app. No entanto essa organização não me permitiu usar os teste do rspec.
 
+3- A configuração padrão do spec_helper.rb é muito ruim para ver os testes que dão certo e que dão errado. Para ficar melhor é só remover as linhas 49 e 96, (são o begin e o end do comentário).
