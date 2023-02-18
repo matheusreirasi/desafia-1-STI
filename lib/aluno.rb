@@ -12,7 +12,7 @@ class Aluno
         @status = aluno["status"]
     end
 
-    def uffmail_disponivel?
+    def possui_uffmail?
         return @uffmail != nil
     end
 
@@ -24,8 +24,5 @@ class Aluno
         return !uffmail_disponivel? && aluno_status?
     end
 
-    def primeiro_nome
-        return @nome.split(" ")[0]
-    end
 end
     

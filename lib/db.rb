@@ -31,8 +31,3 @@ class DB
         false
     end
 end
-
-dados = DB.new
-#puts dados.uffmail_cadastrado?("uffmail@id.uff.br")
-#105794
-#100484

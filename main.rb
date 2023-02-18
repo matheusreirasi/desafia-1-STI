@@ -16,11 +16,29 @@ if busca
     aluno = Aluno.new(busca)
     
     if aluno.aluno_status?
-        puts "Olá #{aluno.nome}. \nAqui estão algumas opções de UFFmail para você escolher"
-        puts "\n"
+        if !aluno.possui_uffmail?
+            puts "Olá #{aluno.nome}. \nAqui estão algumas opções de UFFmail para você escolher"
+            puts "\n"
 
-        opcoes = Gerador.new
-        puts opcoes.opcoes_uffmail(aluno.nome)
+            opcoes = Gerador.new.opcoes_uffmail(aluno.nome)
+            puts opcoes
+            puts "\n"
+
+            loop do
+                escolha = gets.chomp.to_i
+                if escolha > opcoes.length || escolha < 1
+                    puts "Digite um dos números acicma referente ao UFFmail"
+                    next
+                else
+                    puts "\n"
+                    puts "Email #{opcoes[escolha - 1].split[2]} cadastrado com sucesso.\nSua senha de accesso foi encaminhada para seu número #{aluno.telefone}."
+                    break
+                end
+            end
+
+        else
+            puts "Aluno já possui UFFmail cadastrado"
+        end
     else
         puts "Aluno com matricula inativa"
     end
