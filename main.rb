@@ -1,10 +1,10 @@
 #!usr/bin/env ruby
 
-require "./lib/aluno.rb"
-require "./lib/db.rb"
-require "./lib/gerador.rb"
+require "./classes/aluno.rb"
+require "./classes/db.rb"
+require "./classes/gerador.rb"
 
-db = DB.new
+db = DB.new("./database/lista.csv")
 
 puts "Digite sua matricula:"
 matricula = gets.chomp
@@ -27,7 +27,7 @@ if busca
             loop do
                 escolha = gets.chomp.to_i
                 if escolha > opcoes.length || escolha < 1
-                    puts "Digite um dos números acicma referente ao UFFmail"
+                    puts "Opção inválida, digite um dos números acicma referente ao UFFmail"
                     next
                 else
                     puts "\n"
