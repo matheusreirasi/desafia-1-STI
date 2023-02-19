@@ -1,5 +1,0 @@
-1- Depois de colocar o rspec no arquivo Gemfile eu tenho que instalar usando "bundle install" e depois iniciar o rspec com "rspec --init" para instalar o Gemfile.lock e outros arquivos.
-
-2- No começo do projeto havia tentado colocar o arquivo aluno.rb dentro da pasta classes que estava dentro da pasta app. No entanto essa organização não me permitiu usar os teste do rspec.
-
-3- A configuração padrão do spec_helper.rb é muito ruim para ver os testes que dão certo e que dão errado. Para ficar melhor é só remover as linhas 49 e 96, (são o begin e o end do comentário).
