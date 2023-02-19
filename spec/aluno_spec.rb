@@ -16,8 +16,12 @@ RSpec.describe Aluno do
 
     describe "#possui_uffmail?" do
         context "Aluno já possui UFFmail?" do
-            it "por padrão deve retornar false caso haja uma conta cadastrada" do
+            it "retornar FALSE caso não haja uma conta cadastrada" do
                 expect(aluno.possui_uffmail?).to eq(false)
+            end
+
+            it "retorna TRUE se houver uma conta cadastrada" do
+                expect(aluno.possui_uffmail?).to eq(true)
             end
         end
     end
