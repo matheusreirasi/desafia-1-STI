@@ -17,7 +17,7 @@ if busca
     
     if aluno.aluno_status?
         if !aluno.possui_uffmail?
-            puts "Olá #{aluno.nome}. \nAqui estão algumas opções de UFFmail para você escolher"
+            puts "Olá #{aluno.nome.split[0]}. \nAqui estão algumas opções de UFFmail para você escolher"
             puts "\n"
 
             opcoes = Gerador.new.opcoes_uffmail(aluno.nome)
@@ -42,9 +42,4 @@ if busca
     else
         puts "Aluno com matricula inativa"
     end
-
 end
-
-##aluno ativo com uffmail 105794
-##aluno ativo sem uffmail 105226
-##aluno inativo sem uffmail 100484
